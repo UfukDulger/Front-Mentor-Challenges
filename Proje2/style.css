@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%);
+}
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--very-light-gray);
+  color:var(--transparent-white);
+  line-height: 1.5;
+}
+.container{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.container .row{
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .row .card {
+  width: 220px;
+  padding: 2rem;
+  height: 410px;
+}
+.card-1 {
+  background-color: var(--bright-orange);
+  border-radius: 1rem 0 0 1rem;
+}
+.card-2 {
+  background-color: var(--dark-cyan);
+}
+.card-3{
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 1rem 1rem 0;
+}
+h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+button{
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 2rem;
+  border: 3px solid white;
+  background-color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card1-btn{
+  color: var(--bright-orange);
+}
+.card2-btn{
+  color: var(--dark-cyan);
+}
+.card3-btn{
+  color: var(--very-dark-cyan);
+}
+.card1-btn:hover{
+  color: white;
+  background-color: var(--bright-orange);
+}
+.card2-btn:hover{
+  color: white;
+  background-color: var(--dark-cyan);
+}
+.card3-btn:hover{
+  color: white;
+  background-color: var(--very-dark-cyan);
+}
+@media (max-width:1080px){
+.card-2{
+  border-radius: 0 1rem 1rem 0;
+}
+.card-3{
+  border-radius: 1rem;
+  margin-top:3px;
+}
+}
+@media (max-width:730px){
+.card-1 {
+  border-radius: 1rem 1rem 0 0;
+}
+.card-2{
+  border-radius: 0;
+}
+  .card-3{
+    border-radius: 0 0 1rem 1rem;
+    margin-top:0;
+  }
+}
