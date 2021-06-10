@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+font-size: 18px;
+}
+html{
+  background-color: var(--dark-cyan);
+}
+body{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: var(--dark-cyan);
+  font-family: 'Kumbh Sans',sans-serif;
+  background-size: cover;
+  background: url("images/bg-pattern-top.svg") -50% 200% no-repeat , url("images/bg-pattern-bottom.svg") 150% -100% no-repeat;
+}
+/* .background {
+  background: url("images/bg-pattern-top.svg") -50% 200% no-repeat , url("images/bg-pattern-bottom.svg") 150% -100% no-repeat;
+  min-height: 100vh;
+  width: 100%;
+} */
+
+section{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.card {
+  width: 350px;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card-body {
+  padding: 0 1rem 1.5rem;
+}
+.card-header{
+  background-image: url(images/bg-pattern-card.svg);
+  height: 150px;
+  background-size: cover;
+}
+.image-holder{
+  border-radius: 100%;
+  border:5px solid white;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: -3rem auto 2rem auto;
+}
+.image-holder img{
+  display: block;
+  width: 100%;
+  height:auto;
+}
+h1 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+h1 span {
+  color: var(--dark-gray);
+  margin-top: 0;
+  padding-top: 0;
+}
+h2{
+  font-size: 1rem;
+  font-weight: 400;
+  color:var(--dark-gray);
+}
+.card-footer{
+  border-top: var(--dark-gray) 1px solid ;
+  display: flex;
+ justify-content: space-around;
+ padding-bottom: 3rem;
+ text-transform: uppercase;
+}
+.card-footer h3{
+  color: var(--very-dark-desaturated-blue);
+  padding-bottom: 0;
+  margin-bottom: 0.3rem;
+}
+.card-footer span{
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--dark-gray);
+  margin-top: 0;
+  padding-top: 0;
+}
+@media (max-width:890px) {
+  body{
+    background: url("images/bg-pattern-top.svg") 130% 250% no-repeat , url("images/bg-pattern-bottom.svg") -20% -170% no-repeat;
+
+  }
+}
