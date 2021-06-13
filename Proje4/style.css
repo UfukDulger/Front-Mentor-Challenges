@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+/* font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif; */
+:root{
+--white: hsl(0, 0%, 100%);
+--black: hsl(0, 0%, 0%);
+--dark-gray: hsl(0, 0%, 55%);
+--very-dark-gray: hsl(0, 0%, 41%);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 15px;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+}
+ul{
+  list-style-type: none;
+}
+img{
+  width: 100%;
+  cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+header{
+  background-image: url('images/desktop/image-hero.jpg');
+  width: 100%;
+  height: 650px;
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+padding-top:5rem;
+}
+.container{
+  max-width: 1100px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo{
+  z-index: 99;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 2rem;
+  cursor: pointer;
+  color: var(--white);
+  position: relative;
+}
+nav ul li:last-child{
+  margin:0;
+}
+nav ul li:after{
+  content: "";
+  position: absolute;
+  left:25%;
+  bottom: -4px;
+  width: 0;
+  background-color: var(--white);
+  height: 2px;
+  transition: 300ms all;
+}
+nav ul li:hover::after{
+  width: 50%;
+}
+.header-slogan{
+  position: absolute;
+  width: 600px;
+  height: 270px;
+  padding: 3rem;
+  border:2px solid var(--white);
+  top:250px;
+  bottom: 250px;
+}
+ h1{
+  color: var(--white);
+  font-size: 4rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/* Header End */
+
+/* Content Start */
+.content{
+  width: 100%;
+  height: auto;
+  margin-top: 10rem;
+  position: relative;
+margin-bottom: 10rem;
+}
+
+.content-image{
+  width: 750px;
+  height: auto;
+
+}
+.main-content{
+  position: absolute;
+  width: 500px;
+  height: auto;
+  bottom:0;
+  right: 0;
+  background-color: white;
+  padding: 3rem;
+}
+.main-content h1{
+  color: var(--black);
+  font-size: 3rem;
+}
+.main-content p{
+  color:var(--dark-gray);
+  line-height: 1.5;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* content finish */
+
+.photos-start {
+  width: 100%;
+  height: 75px;
+  z-index: 20;
+  margin-bottom: 4rem;
+}
+.photos-start h1{
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: 400;
+}
+.btn{
+  padding: 10px 30px;
+  border:1px solid var(--black);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.btn:hover{
+  cursor:pointer;
+  background-color: var(--black);
+  color: var(--white);
+  transform: scale(0.93);
+}
+.images{
+  display: grid;
+  margin-bottom: 10rem;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 1rem;
+}
+.even{
+    height: 450px;
+      width: 100%;
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+cursor: pointer;
+position: relative;
+color: var(--white);
+margin-bottom: 0;
+}
+.margin{
+  margin:0 auto;
+}
+.even:hover{
+  background-color: var(--white);
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  color:black;
+}
+.even-1{
+  background-image: url(images/desktop/image-deep-earth.jpg);
+}
+.even-2{
+  background-image: url(images/desktop/image-night-arcade.jpg);
+}
+.even-3{
+  background-image: url(images/desktop/image-soccer-team.jpg);
+}
+.even-4{
+  background-image: url(images/desktop/image-grid.jpg);
+}
+.even-5{
+  background-image: url(images/desktop/image-from-above.jpg);
+}
+.even-6{
+  background-image: url(images/desktop/image-pocket-borealis.jpg);
+}
+.even-7{
+  background-image: url(images/desktop/image-curiosity.jpg);
+}
+.even-8{
+  background-image: url(images/desktop/image-fisheye.jpg);
+}
+.even h2{
+  display: block;
+  position: absolute;
+  padding: 1rem;
+  bottom:2rem;;
+  left:2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  z-index: 5;
+}
+.btn2-container{
+width: 300px;
+margin: auto;
+margin-top: 3rem;
+margin-right: 2rem;
+display: none;
+visibility: hidden;
+}
+footer{
+  margin-top: 10rem;
+  min-height: 9rem;
+  background-color: var(--black);
+}
+.footer-logo{
+  width: 200px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+.social-medya ul{
+  margin-top: 3rem;
+  margin-left: 10rem;
+}
+.social-medya ul li{
+  display: inline-block;
+  margin-right: 7px;
+}
+.social-medya ul li:last-child{
+  display: inline-block;
+  margin-right:0;
+}
+h6{display: block;
+margin-top: 1rem;
+color: var(--very-dark-gray);
+font-size: 1rem;
+}
+.toggle{
+  display: none;
+  visibility: hidden;
+}
+@media (max-width:876px) {
+.images{
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+}
+.even{
+  height: 250px;
+}
+}
+@media (max-width:700px){
+  .header-slogan{
+    width: 350px;
+    height: 200px;
+    font-size:2rem;
+  }
+  h1{    font-size:2rem;
+  }
+  .images{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8,1fr);
+  }
+  .even{
+    height: 300px;
+  }
+  .btn-1{
+    display: none;
+    visibility:hidden;
+  }
+.btn2-container{
+    display: block;
+    visibility: visible;
+  }
+  .main-content{
+    position: static;
+  }
+  .footer-logo{
+    width: 200px;
+    margin: auto;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .content-image{
+    width: 100%;
+  }
+.main-content{
+  padding: 0;
+  width: 370px;
+  margin-top: 2rem;
+}
+header nav ul li{
+  display: none;
+}
+.toggle{
+  visibility: visible;
+  display: block;
+  position: absolute;
+  top:5rem;;
+  right:5rem;;
+  width: 30px;
+  height: 25px;
+  background-image: url(images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+z-index: 99;
+cursor: pointer;
+}
+.toggle.active {
+    background-image: url(images/icon-close.svg);
+    visibility: visible;
+    display: block;
+    position: fixed;
+    top:5rem;;
+    right:5rem;;
+    width: 30px;
+    height: 25px;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 99;
+  cursor: pointer;
+}
+.navigation{
+  position: fixed;
+  top:0;
+  left:100%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 20;
+}
+.navigation.active{
+  left:0;
+}
+.navigation nav ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top:150px;
+  left:30px;
+}
+.navigation nav ul li {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+}
